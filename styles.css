@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    --fp-background-color: #166761;
+    --fp-blur-filter: rgb(0, 0, 0, 0.2);
+}
+
+#fp-background{
+    background-color: #166761;
+}
+
+#fp-content{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(images/tic-tac-toe-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fp-header{
+    backdrop-filter: blur(20px);
+    background-color: var(--fp-blur-filter);
+    margin-bottom: 16rem;
+}
+
+#fp-content h1{
+    margin: 3rem 0rem;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+
+}
+
+#fp-content main{
+    display: flex;
+    justify-content: center;
+}
+
+.fp-button{
+    padding: 1rem;
+    width: max(30%, 200px);
+    font-size: 2rem;
+    backdrop-filter: blur(20px);
+    background-color: rgb(0, 0, 0, 0.2);
+    border: 1px solid var(--fp-background-color);
+    color: white;
+}
+

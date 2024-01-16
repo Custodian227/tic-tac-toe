@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --sp-background-color: #166761;
+    --sp-secondary-color: #24a39a;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--sp-background-color);
+}
+
+#gp-marker-choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+#gp-marker-choice span{
+    margin: 0rem 3rem;
+    font-size: 3rem;
+    color: white;
+}
+
+#gp-marker-choice button{
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    background-color: var(--sp-secondary-color);
+    border-style: none;
+    color: white;
+    box-shadow: 0px 0px 20px 2px #0c3835;
+    border-radius: 50%;
+}
+
+#gp-board{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+#gp-grid{
+    width: max(400px, 30%);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    aspect-ratio: 1 / 1; 
+}
+
+#gp-grid > button{
+    box-shadow: 0px 0px 20px 2px #0c3835;
+    border-style: none;
+    outline-style: none;
+    border-radius: 10px;
+    background-color: var(--sp-secondary-color);
+    font-size: 3rem;
+    color: white;
+}
+
+#gp-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gp-result-info{
+    color: white;
+    font-size: 3rem;
+
+}
+
+.new-game-button{
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    background-color: white;
+    color: var(--sp-background-color);
+    border: 2px solid var(--sp-background-color);
+    margin: 2rem 0rem; 
+}
+
